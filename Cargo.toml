@@ -3,6 +3,10 @@ name = "static-str"
 version = "0.1.0"
 authors = ["chen <chanble_cn@163.com>"]
 edition = "2018"
+description = "convert a string into a static str"
+repository = "https://github.com/chanble/static-str"
+homepage = "https://github.com/chanble/static-str"
+readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
