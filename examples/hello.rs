@@ -1,10 +1,7 @@
-use static_str;
+use static_str::to_str;
 
 fn main() {
-    let s = "hello";
-    let ss = format!("{}", s);
-
-    let s2 = static_str::string_to_static_str(ss);
-
-    println!("s: {}, s2: {}", s, s2);
+    let option_value = Some(123);
+    let v = option_value.map_or("", |v| to_str(v.to_string()));
+    assert_eq!(v, "123");
 }
